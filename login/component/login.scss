@@ -1,0 +1,23 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.login {
+  &__signup-link {
+    text-decoration: none;
+    color: $BLUE;
+    margin: 2rem 0;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    margin: 2rem 0;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    margin: 5rem;
+  }
+}

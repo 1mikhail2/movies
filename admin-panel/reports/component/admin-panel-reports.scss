@@ -1,0 +1,7 @@
+.admin-panel-reports {
+  &__item {
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+}

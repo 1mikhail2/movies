@@ -1,0 +1,21 @@
+@import "../../../assets/styles/abstracts/variables";
+
+.banned {
+  min-height: calc(100vh - 13.9rem);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  &__icon {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto;
+  }
+}

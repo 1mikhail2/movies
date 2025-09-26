@@ -1,0 +1,3 @@
+import AdminPanelVerificationContainer from './AdminPanelVerificationContainer';
+
+export default AdminPanelVerificationContainer;

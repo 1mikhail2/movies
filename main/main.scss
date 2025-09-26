@@ -1,0 +1,42 @@
+@import "../../../assets/styles/abstracts/variables";
+
+.main {
+  &__info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 6rem;
+    max-width: 64rem;
+    margin: 0 auto;
+    font-weight: 500;
+
+    @media screen and (max-width: 465px) {
+      font-size: 4rem;
+    }
+  }
+
+  &__text {
+    margin: 2.5rem auto;
+    max-width: 44rem;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 160rem;
+    margin-top: 5%;
+  }
+}

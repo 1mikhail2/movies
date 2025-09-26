@@ -1,0 +1,9 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.section-items {
+  &__item {
+    &:nth-child(n + 7) {
+      display: none;
+    }
+  }
+}

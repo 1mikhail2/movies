@@ -1,0 +1,181 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.movie-details {
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &__secondary-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__background {
+    position: relative;
+
+    &-image {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 3vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $WHITE;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 160rem;
+    gap: 2rem;
+
+    @media screen and (max-width: 865px) {
+      grid-template-columns: 3fr;
+    }
+  }
+
+  &__info {
+    margin: 0 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media screen and (max-width: 865px) {
+      margin: 0;
+    }
+
+    &-wrapper {
+      border-right: 0.2rem solid $CL_6_GREY;
+
+      @media screen and (max-width: 865px) {
+        border-right: none;
+      }
+    }
+  }
+
+  &__poster {
+    width: 30rem;
+    border-radius: 0.6rem;
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+
+    &-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+
+      @media screen and (max-width: 1170px) {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 865px) {
+      width: 22rem;
+    }
+  }
+
+  &__keywords-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &__keyword {
+    border: 0.2rem solid $CL_8_GREY;
+    color: $CL_8_GREY;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  &__pictures-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__picture {
+    width: 100%;
+
+    &-item {
+      width: 25rem;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:nth-child(n + 7) {
+        display: none;
+      }
+    }
+  }
+
+  &__similar-movies-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__section-info {
+    &:not(:first-child) {
+      margin: 2rem 0;
+    }
+
+    &-title {
+      margin: 0 0 2rem 0;
+    }
+
+    &-text {
+      line-height: 2.3rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+
+  &__cast {
+    &-title {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__actor {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: $BLACK;
+
+    &:hover {
+      background: $CL_7_GREY;
+    }
+
+    &-avatar {
+      height: 100%;
+
+      &-container {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+  }
+}

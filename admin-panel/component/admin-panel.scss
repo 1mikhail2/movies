@@ -1,0 +1,35 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.admin-panel {
+  &__container {
+    display: flex;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 1090px) {
+      flex-direction: column;
+    }
+  }
+
+  &__nav {
+    margin-left: 3rem;
+
+    @media screen and (max-width: 1090px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    margin: 0 5rem;
+    width: 100%;
+
+    @media screen and (max-width: 1090px) {
+      margin: 2rem 0 0;
+    }
+  }
+
+  &__user-item {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}

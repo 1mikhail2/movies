@@ -1,0 +1,5 @@
+const STRIPE_KEY = {
+  TEST: 'pk_test_51IY5QeFg0f5jHJQYZrceG1BfbvDNyTlEPWxDZTCzBMwwcf7vTpPdSK2KQ0XE30OnMhbbwA6UQfAfdpPQeJs2VXj600YgRBCma8'
+};
+
+export default STRIPE_KEY;

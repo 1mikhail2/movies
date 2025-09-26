@@ -1,0 +1,17 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.community-admin-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: background 0.1s;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: $BLACK;
+  text-decoration: none;
+
+  &:hover {
+    background: $CL_6_GREY;
+  }
+}

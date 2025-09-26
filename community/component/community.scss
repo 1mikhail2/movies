@@ -1,0 +1,107 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.community {
+  &__header {
+    position: relative;
+  }
+
+  &__backdrop {
+    width: 100%;
+    border-radius: 1.5rem;
+    height: 25rem;
+    object-fit: cover;
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12rem;
+    height: 12rem;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $CL_8_GREY;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 7rem 0 0;
+    font-size: 3rem;
+  }
+
+  &__info {
+    &-sections {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 7rem;
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+
+    &-data {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &-container {
+        margin: 3rem 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__button {
+    width: 10rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 3fr 27rem;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: flex-start;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  &__side {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media screen and (max-width: 900px) {
+      &:last-child {
+        order: -1;
+      }
+    }
+  }
+
+  &__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
