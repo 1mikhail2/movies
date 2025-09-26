@@ -1,0 +1,26 @@
+@import "../../assets/styles/abstracts/variables";
+@import "../../assets/styles/base/reset";
+
+body {
+  font-family: $FONT-FAMILY;
+  color: $BLACK;
+  font-size: 1.5rem;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $CL_8_GREY;
+    border-radius: 1.5rem;
+  }
+}
+
+.app {
+  display: flex;
+
+  &__content {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+}

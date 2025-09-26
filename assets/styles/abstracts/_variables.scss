@@ -1,0 +1,82 @@
+$FONT_FAMILY: "Roboto";
+
+$WHITE: #fff;
+$CL_1_WHITE: #fce4e4;
+$BLACK: #0d0d0d;
+$CL_2_BLACK: #000;
+$BLUE: #1da1f2;
+$CL_2_BLUE: #06c;
+$CL_1_GREY: #d2d2d2;
+$CL_2_GREY: #fafafa;
+$CL_3_GREY: #2e2e2e;
+$CL_4_GREY: #161616;
+$CL_5_GREY: #f9f9f9;
+$CL_6_GREY: #e0e0e0;
+$CL_7_GREY: #e6e6e7;
+$CL_8_GREY: #808080;
+$CL_9_GREY: #d9d9d9;
+$CL_10_GREY: #c4c4c6;
+$CL_11_GREY: rgba(0, 0, 0, 0.95);
+$CL_12_GREY: rgba(60, 60, 67, 0.6);
+$CL_13_GREY: #fbfbfb;
+$CL_14_GREY: #333;
+$CL_15_GREY: #65676b;
+$CL_16_GREY: #f0f2f5;
+$CL_17_GREY: #606060;
+$RED: #fa233b;
+$PINK: #fa7987;
+$CL_1_PINK: #fcc2c3;
+$YELLOW: #f4c430;
+$CL_1_GREEN: #3bb143;
+$CL_2_GREEN: #d0f0c0;
+$CL_2_YELLOW: #ffa500;
+
+$BOX_SHADOW: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+$RAINBOW: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+
+@mixin rainbow {
+  @-webkit-keyframes rainbow {
+    0% {
+      background-position: 0% 82%;
+    }
+    50% {
+      background-position: 100% 19%;
+    }
+    100% {
+      background-position: 0% 82%;
+    }
+  }
+  @-moz-keyframes rainbow {
+    0% {
+      background-position: 0% 82%;
+    }
+    50% {
+      background-position: 100% 19%;
+    }
+    100% {
+      background-position: 0% 82%;
+    }
+  }
+  @-o-keyframes rainbow {
+    0% {
+      background-position: 0% 82%;
+    }
+    50% {
+      background-position: 100% 19%;
+    }
+    100% {
+      background-position: 0% 82%;
+    }
+  }
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 82%;
+    }
+    50% {
+      background-position: 100% 19%;
+    }
+    100% {
+      background-position: 0% 82%;
+    }
+  }
+}
